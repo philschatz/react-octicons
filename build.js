@@ -20,12 +20,12 @@ class ${componentName} extends Component {
   render() {
     let {className} = this.props
     if (className) {
-      className = CLASS_NAME + className
+      className = CLASS_NAME + ' ' + className
     } else {
       className = CLASS_NAME
     }
     return (
-      <svg className={className} height={${height}} width={${width}} viewBox='${viewBox}' ariaHidden={${ariaHidden}}>
+      <svg height={${height}} width={${width}} viewBox='${viewBox}' ariaHidden={${ariaHidden}} {...this.props} className={className}>
         ${svgContents}
       </svg>
     )
