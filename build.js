@@ -18,14 +18,27 @@ import React, {Component, PropTypes} from 'react'
 const CLASS_NAME = '${className}'
 class ${componentName} extends Component {
   render() {
-    let {className} = this.props
+    let defaults = {
+      height: ${height},
+      width: ${width},
+      viewBox: '${viewBox}',
+      ariaHidden: ${ariaHidden}
+    }
+
+    let {className, size} = this.props
     if (className) {
       className = CLASS_NAME + ' ' + className
     } else {
       className = CLASS_NAME
     }
+
+    if (size === 'mega') {
+      defaults.height *= 8
+      defaults.width *= 8
+    }
+
     return (
-      <svg height={${height}} width={${width}} viewBox='${viewBox}' ariaHidden={${ariaHidden}} {...this.props} className={className}>
+      <svg {...defaults} {...this.props} className={className}>
         ${svgContents}
       </svg>
     )
