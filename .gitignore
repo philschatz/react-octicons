@@ -1,0 +1,7 @@
+/node_modules/
+
+/lib/*.js
+/lib/*.js.map
+
+/src/*.jsx
+/src/index.js
