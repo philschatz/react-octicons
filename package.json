@@ -1,6 +1,7 @@
 {
   "scripts": {
     "start": "npm run-script build",
+    "test": "npm run-script build",
     "prebuild": "node ./build.js",
     "build": "babel ./src/ --out-dir ./lib/ --source-maps"
   },

@@ -14,14 +14,25 @@ Object.getOwnPropertyNames(octicons).forEach(function(iconName) {
 
   const jsxSource = `
 import React, {Component, PropTypes} from 'react'
+
+const CLASS_NAME = '${className}'
 class ${componentName} extends Component {
   render() {
+    let {className} = this.props
+    if (className) {
+      className = CLASS_NAME + className
+    } else {
+      className = CLASS_NAME
+    }
     return (
-      <svg height={${height}} width={${width}} viewBox='${viewBox}' className='${className}' ariaHidden={${ariaHidden}}>
+      <svg className={className} height={${height}} width={${width}} viewBox='${viewBox}' ariaHidden={${ariaHidden}}>
         ${svgContents}
       </svg>
     )
   }
+}
+${componentName}.propTypes = {
+  className: PropTypes.string
 }
 export default ${componentName}
 `
