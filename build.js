@@ -33,8 +33,8 @@ class ${componentName} extends Component {
     }
 
     if (size === 'mega') {
-      defaults.height *= 8
-      defaults.width *= 8
+      defaults.height *= 2
+      defaults.width *= 2
     }
 
     return (
