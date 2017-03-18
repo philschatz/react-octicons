@@ -4,6 +4,7 @@
 [![build status][travis-image]][travis-url]
 [![dependency status][dependency-image]][dependency-url]
 [![dev dependency status][dev-dependency-image]][dev-dependency-url]
+[![Greenkeeper badge](greenkeeper-image)](greenkeeper-url)
 
 # Install
 
@@ -36,3 +37,5 @@ export default class MyComponent extents Component {
 [dependency-url]: https://david-dm.org/philschatz/react-octicons
 [dev-dependency-image]: https://img.shields.io/david/dev/philschatz/react-octicons.svg
 [dev-dependency-url]: https://david-dm.org/philschatz/react-octicons#info=devDependencies
+[greenkeeper-image]: https://badges.greenkeeper.io/philschatz/react-octicons.svg
+[greenkeeper-url]: https://greenkeeper.io
