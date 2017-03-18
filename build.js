@@ -22,7 +22,7 @@ class ${componentName} extends Component {
       height: ${height},
       width: ${width},
       viewBox: '${viewBox}',
-      ariaHidden: ${ariaHidden}
+      'aria-hidden': ${ariaHidden}
     }
 
     let {className, size} = this.props
