@@ -1,5 +1,7 @@
 # Octicons for React
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/philschatz/react-octicons.svg)](https://greenkeeper.io/)
+
 [![NPM version][npm-image]][npm-url]
 [![build status][travis-image]][travis-url]
 [![dependency status][dependency-image]][dependency-url]
