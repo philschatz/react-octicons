@@ -4,7 +4,7 @@
 [![build status][travis-image]][travis-url]
 [![dependency status][dependency-image]][dependency-url]
 [![dev dependency status][dev-dependency-image]][dev-dependency-url]
-[![Greenkeeper badge](greenkeeper-image)](greenkeeper-url)
+[![Greenkeeper badge][greenkeeper-image]][greenkeeper-url]
 
 # Install
 
