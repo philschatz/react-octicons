@@ -13,7 +13,8 @@ Object.getOwnPropertyNames(octicons).forEach(function(iconName) {
   const componentName = `${toPascalCase(iconName)}${SUFFIX}`
 
   const jsxSource = `
-import React, {Component, PropTypes} from 'react'
+import React, {Component} from 'react'
+import PropTypes from 'prop-types'
 
 const CLASS_NAME = '${className}'
 class ${componentName} extends Component {
